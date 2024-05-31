@@ -1,0 +1,74 @@
+.btn-custom-primary {
+    background-color: $color-primary;
+    color: white;
+
+    &:hover {
+        background-color: darken($color-primary, 5%);
+        color: white;
+    }
+}
+
+.btn-custom-primary-outline {
+    background-color: white;
+    color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover {
+        background-color: $color-primary;
+        color: white;
+    }
+}
+
+.btn-check:checked + .btn-check-custom,
+.btn-check:hover + .btn-check-custom {
+    background-color: $color-primary;
+    color: white;
+}
+
+.btn-custom-secondary {
+    background-color: $color-secondary;
+    color: white;
+
+    &:hover {
+        background-color: darken($color-secondary, 5%);
+        color: white;
+    }
+}
+
+.btn-link-custom {
+    width: 40px;
+    height: 40px;
+}
+
+.projects-link-custom {
+    line-height: 2rem;
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.thumb-custom {
+    width: 300px;
+    height: auto;
+}
+
+.projects-num-cell {
+    background-color: $color-secondary;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+
+    &.high {
+        background-color: darken($color-secondary, 20%);
+    }
+
+    &.low {
+        background-color: lighten($color-secondary, 10%);
+    }
+
+    &.zero {
+        background-color: white;
+        color: black;
+    }
+}

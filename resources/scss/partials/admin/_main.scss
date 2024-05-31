@@ -1,0 +1,170 @@
+.main-wrapper {
+    height: calc(100vh - 75px);
+    background-color: $color-background;
+
+    aside {
+        width: 250px;
+        padding: 20px;
+        background-color: $color-primary;
+        flex-shrink: 0;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                color: white;
+                line-height: 2rem;
+                padding: 8px;
+                border-radius: 10px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.3);
+                }
+            }
+        }
+
+        .collapse-btn-custom {
+            border: none;
+            color: white;
+            width: auto;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .wrapper-dashboard {
+        padding: 50px;
+
+        .highlights-box {
+            height: 80px;
+            background-color: $color-primary;
+            border-radius: 10px;
+            padding: 8px;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            position: relative;
+
+            i {
+                font-size: 3rem;
+                margin-right: 30px;
+            }
+
+            .icon-custom-add {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                color: white;
+                border: 3px solid $color-primary;
+                background-color: $color-primary;
+                border-radius: 50%;
+                font-size: 2rem;
+
+                &:hover {
+                    background-color: white;
+                    color: $color-primary;
+                    border-color: white;
+                }
+            }
+        }
+    }
+
+    .dashboard-data-box {
+        padding: 0 50px;
+
+        .card {
+            .card-header {
+                background-color: $color-primary;
+                color: white;
+            }
+        }
+    }
+
+    .wrapper-tech {
+        max-width: 500px;
+    }
+
+    .wrapper-tech,
+    .wrapper-projects {
+        margin: 0 auto;
+        padding: 0 50px;
+
+        h2 {
+            color: $color-primary;
+        }
+
+        table {
+            vertical-align: middle;
+
+            th {
+                background-color: $color-primary;
+                height: 50px;
+                color: white;
+                vertical-align: middle;
+
+                a {
+                    color: white;
+                }
+            }
+            td {
+                input {
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .form-custom,
+    .form-custom-alerts {
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    .card {
+        .card-img-box {
+            width: 400px;
+            background-color: gainsboro;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .pagination-custom {
+        p {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+
+        .page-link {
+            color: $color-primary;
+
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgba($color-primary, 0.25);
+            }
+        }
+        .page-item.active {
+            .page-link {
+                background-color: $color-primary;
+                border-color: $color-primary;
+                color: white;
+            }
+        }
+    }
+}

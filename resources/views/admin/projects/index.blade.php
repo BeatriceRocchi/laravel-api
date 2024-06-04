@@ -66,7 +66,12 @@
                             <td class="text-nowrap text-uppercase fw-semibold">{{ $project->title }}</td>
 
                             <td class="text-nowrap">
-                                <a href="{{ route('admin.type-filter', $project->type) }}">{{ $project->type->name }}</a>
+                                @if ($project->type)
+                                    <a
+                                        href="{{ route('admin.type-filter', $project->type) }}">{{ $project->type->name }}</a>
+                                @else
+                                    -
+                                @endif
                             </td>
 
                             <td class="text-nowrap">{{ $project->month->name }}</td>

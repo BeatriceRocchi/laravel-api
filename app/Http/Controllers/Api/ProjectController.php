@@ -28,4 +28,21 @@ class ProjectController extends Controller
         $technologies = Technology::all();
         return response()->json($technologies);
     }
+
+    public function getProjectBySlug($slug)
+    {
+        $project = Project::where('slug', $slug)->with('type', 'technologies')->first();
+
+        if ($project) {
+            $success = true;
+            if ($project->img) {
+                $project->img = asset('storage/' . $project->img);
+            } else {
+                $project->img = asset('storage/uploads/img-placeholder.png');
+            }
+        } else {
+            $success = false;
+        }
+        return response()->json(compact('success', 'project'));
+    }
 }

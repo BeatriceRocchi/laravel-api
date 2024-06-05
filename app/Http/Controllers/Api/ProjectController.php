@@ -7,12 +7,13 @@ use App\Models\Project;
 use App\Models\Technology;
 use App\Models\Type;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProjectController extends Controller
 {
     public function index()
     {
-        $projects = Project::with('type', 'technologies')->paginate(3);
+        $projects = Project::with('type', 'technologies')->get();
 
         return response()->json($projects);
     }
@@ -36,9 +37,9 @@ class ProjectController extends Controller
         if ($project) {
             $success = true;
             if ($project->img) {
-                $project->img = asset('storage/' . $project->img);
+                $project->img = Storage::url($project->img);
             } else {
-                $project->img = asset('storage/uploads/img-placeholder.png');
+                $project->img = Storage::url('uploads/img-placeholder.png');
             }
         } else {
             $success = false;

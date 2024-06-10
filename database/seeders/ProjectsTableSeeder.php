@@ -21,9 +21,10 @@ class ProjectsTableSeeder extends Seeder
         foreach ($projects as $project) {
             $new_project = new Project;
 
-            $new_project->type_id = Type::inRandomOrder()->first()->id;
-            $new_project->month_id = Month::inRandomOrder()->first()->id;
+            $new_project->type_id = Type::where('name', $project['type'])->first()->id;
+            $new_project->month_id = Month::where('name', $project['month'])->first()->id;
             $new_project->title = $project['title'];
+            $new_project->link = $project['link'];
             $new_project->slug = Helper::generateSlug($new_project->title, Project::class);
             $new_project->img = $project['img'];
             $new_project->date = $project['date'];

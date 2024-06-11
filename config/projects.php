@@ -83,6 +83,60 @@ return [
         "link" => 'https://github.com/BeatriceRocchi/js-campominato-dom',
         "description" => 'Replica of a simplified version of the game "Campo Minato" in HTML, CSS and JavaScript. Based on the difficulty level selected by the user, the application sets the game board, randomly places the bombs and, at each click of the user on a cell, checks the presence of a bomb, keeps track of the score that will be shown at the end of the game with a custom message depending on whether you win or lose'
     ],
+    [
+        "type" => 'Front End',
+        "month" => 'March',
+        "title" => 'Carousel',
+        "img" => '',
+        "date" => '2024-03-01',
+        "link" => 'https://github.com/BeatriceRocchi/js-array-objects-carousel',
+        "description" => 'Development of a dynamic carousel of images with thumbnails in HTML, CSS and JavaScript. The implemented features allow user to change the active image by clicking the next/prev button, or clicking a thumbnail, or automatically clicking the autoplay button'
+    ],
+    [
+        "type" => 'Front End',
+        "month" => 'March',
+        "title" => 'Vue Carousel',
+        "img" => '',
+        "date" => '2024-03-01',
+        "link" => 'https://github.com/BeatriceRocchi/vue-slider',
+        "description" => 'Development of a dynamic carousel of images with thumbnails in HTML, CSS and JavaScript on the framework Vue. The implemented features allow the user to change the active image by clicking the next/previous button or clicking a thumbnail, autoplay is automatically set and stops when hovering the slider, and at double click the direction of autoplay reverses'
+    ],
+    [
+        "type" => 'Front End',
+        "month" => 'March',
+        "title" => 'To do list',
+        "img" => '',
+        "date" => '2024-03-01',
+        "link" => 'https://github.com/BeatriceRocchi/vue-todolist',
+        "description" => 'Development of a basic todo list in HTML, CSS and JavaScript on the framework Vue. The implemented features allow to add a new item in the list, to mark as done the item, and to delete it when it is marked by clicking on the trash icon'
+    ],
+    [
+        "type" => 'Front End',
+        "month" => 'March',
+        "title" => 'Boolzapp',
+        "img" => '',
+        "date" => '2024-03-01',
+        "link" => 'https://github.com/BeatriceRocchi/vue-boolzapp',
+        "description" => 'Replica of WhatsApp webApp in HTML, CSS and JavaScript on the framework Vue. The implemented features allow to search and filter a specific chat based on contact name, to add new messages in a chat with automatic replies setted, to delete a message from a chat, and to activate the darkmode'
+    ],
+    [
+        "type" => 'Front End',
+        "month" => 'April',
+        "title" => 'Rick & Morty',
+        "img" => '',
+        "date" => '2024-04-01',
+        "link" => 'https://github.com/BeatriceRocchi/vite-rick-morty',
+        "description" => 'Development of an interface for the Rick & Morty characters\' cards album in HTML, CSS and JavaScript on the framework Vue with the tool Vite. An API to an external service gathers data that are displayed on each card and implemented features allow to organize cards in several pages, to search for specific characters, and to filter them based on status and/or species'
+    ],
+    [
+        "type" => 'Front End',
+        "month" => 'April',
+        "title" => 'Fable',
+        "img" => '',
+        "date" => '2024-04-01',
+        "link" => 'https://github.com/BeatriceRocchi/proj-html-vuejs',
+        "description" => 'Replica of a made-up Fable website homepage in HTML, CSS and JavaScript on the framework Vue with the tool Vite. The creation of reusable components is one of the main focus of the project: buttons, cards, call to action elements, icon boxes'
+    ],
 
 
 ];
